@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/examples/styles3.css">
     <script src="https://kit.fontawesome.com/c5ea8e3567.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -47,10 +47,9 @@
 
           <!-- /sidebar --> 
 
-           <!-- main -->
+           
 
-            <div class="main">
-                
+            
               <header class="header">
                   <div>
                   <h1>Lorem</h1>
@@ -66,26 +65,34 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sunt itaque nihil enim culpa, voluptates magnam quod repellendus perspiciatis a maiores voluptatem minima eligendi nisi officiis cupiditate, eveniet hic sit.</p>
                  
                     <div class="card-project">
-                     
-                      <div class="project-sidebar">
-                        <img class="project-image" src="css/assets//img/samharris.png" alt="">
-                        <ul>
-                          <li></li>
-                          <li></li>
-                          <li></li>
+                        
+                        <div class="project-sidebar">
+                          <img class="project-image" src="css/assets/img/samharris.png" alt="image">
+                          <ul>
+                    
+                         <li> <a href="#"><i class="fab fa-github"></i></a></li>
+                         <li><a href="#"><i class="fab fa-bootstrap"></i></a></li>
+                         <li><a href="#"><i class="fab fa-python"></i></a></li>
+
                         </ul>
-                      </div>
-
-                      <div class="project-main">
-                        <h2 class="project-name">Handy</h2>
-                        <p>Web app</p>
-                        <p class="project-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.</p>
-                        <div class="project-button">
-                          <input class="view-details-button" type="submit" value="view-details">
                         </div>
-
+                    
+                        <div class="project-main">
+                          <h2 class="project-name">HANDY</h2>
+                          <p>Web App</p>
+                          <p class="project-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iusto repellat quia cumque corrupti! Dicta.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla animi laudantium autem fugiat dolor. Accusamus nihil vel officia illum soluta.
+                          </p>
+                          <div class="project-button">
+                            <input  class="view-details-button" type="submit" value="View Details">
+                          </div>
+                        </div>
+                    
                       </div>
-                    </div>
+                          
+                            
+                     </div>
                             
                     
                 </div>
@@ -144,26 +151,6 @@
                     
                       </section>
 
-                      <h2>Interests</h2>
-
-                      <div class="interest-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th >Name</th>
-                                    <th>Price</th>
-                                    <th>Market Cap</th>
-                                    <th>Circulating Supply</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody">
-                                
-                            </tbody>
-                        </table>
-                    </div>
-
-
-
                  </div>
                 
                 </div>
@@ -174,7 +161,7 @@
                 </div>
             </article>
 
-             <!-- /main -->
+             
 
 
               <!-- Contact -->
@@ -184,38 +171,28 @@
                 <h1>Contact me</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, quos. Accusantium quod vitae eligendi architecto beatae commodi ab ea quo!</p>
                 <form action="">
-                    <input id="firstname" class="fisrtname" type="text" placeholder="Fisrtname">
-                    <input id="lastname" class="lastname" type="text" placeholder="lastname">
-                    <input id="email"class="email" type="email" placeholder="email">
-                    <input id="company"class="company" type="text" placeholder="company">
-                    <textarea id="message" class="message" placeholder="Message" ></textarea>
+                    <input class="fisrtname" type="text" placeholder="Fisrtname">
+                    <input class="lastname" type="text" placeholder="lastname">
+                    <input class="email" type="email" placeholder="email">
+                    <input class="company" type="text" placeholder="company">
+                    <textarea class="message" placeholder="Message" ></textarea>
                    
                   </form>
                   <div class="align-button">
-                    <button onclick="sendEmail()" id="contact-button">
-                    <input  class="button" id="contact-button"type="submit" value="Send Message">
-                  </button>
-                  </div>
-
-
+                  <input  class="button" type="submit" value="Send Message">
+                </div>
                     
              </footer>
              <!-- /Contact -->
-            </div>
-            
+
+             
+    
             </div>
 
              <!-- /wrapper -->
           
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
-                 (function() {
-                     // https://dashboard.emailjs.com/admin/integration
-                     emailjs.init('user_hixMCK9CUhz3EOAIIHtPH');
-                 })();
-             </script>
-       <script src="js/bitcoinApi.js"></script> 
-       <script src="js/contactForm.js"></script>
+
+        
 
 </body>
 </html>
