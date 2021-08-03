@@ -7,13 +7,14 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
+    
 
 }
 
 body{
     background: #f3f5f9;
     height: 100%;
-    width: 100px;
+    width: 100%;
     
 
 
@@ -57,7 +58,7 @@ body{
         width: 20vw;
         position:fixed;
         height: 100vh;
-       padding: 30px 0;
+       padding: 30px;
         
     }
     
@@ -70,7 +71,7 @@ body{
     }
 
     .sidebar .profile-text-col h2{
-        color: #fff;
+        color: rgb(165, 145, 145);
         text-align: center;
         margin-bottom: 30px;
     }
@@ -78,13 +79,14 @@ body{
         height: 50px;
         width: 50px;
         margin-left: 20px;
+        border-radius: 50%;
     }  
     
     
 
 
     .sidebar ul li{
-        padding: 15px;
+        padding: 18px;
         border-bottom:1px solid rgba(0,0,0,0.05);
         border-top:1px solid rgba(225,225,225,0.05);
         height: 70px;
@@ -92,7 +94,7 @@ body{
     }
     
      .sidebar ul li a{
-        color:#fff;
+        color:rgb(165, 145, 145);
         display: block;
     }
     
@@ -109,29 +111,34 @@ body{
     }
     
      .sidebar ul li:hover a{
-        color:  #fff;
+        color:  rgb(184, 170, 170);
     }
+
+
     .sidebar .social_media{
-        position: relative;
-        bottom:0;
-        left: 50%;
-        transform: translateX(-50%);
+        
         display:flex;
-        margin-top: 130px;
+        margin-top: 117px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        
+        
+        
         
     
     }
     .sidebar .social_media a{
         display: block;
         width: 40px;
-        
         height: 40px;
         line-height: 40px;
-        text-align: center;
         margin: 0 5px;
         color: #bdb8d7;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+        text-align: center;
+    
     
     
     }
@@ -139,12 +146,12 @@ body{
     
     .header{
     
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url("assets/img/header.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1)),url("assets/img/autumn.jpg");
     background-size: cover;
     background-position:center;
     border-bottom: 1px solid #e0e4e8;
     margin-bottom: 20px;
-    height: 700px;
+    height: 600px;
     
     padding: 30px;
     
@@ -152,8 +159,8 @@ body{
     .header div{
         padding-top: 200px;
         display: block;
-        font-size: 30px;
-        color: #fff;
+        font-size: 35px;
+        color: rgb(165, 145, 145);
         text-align: center;
         
         
@@ -162,7 +169,7 @@ body{
         
     }
     .content{
-        margin-top: 80px;
+        
         height: auto;
         padding: 30px;
         
@@ -170,13 +177,30 @@ body{
 
     
     
-    .content  h1{
+    .content .seccion h1{
         text-align: center;
+        font-size: 70px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .content .seccion p{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        word-spacing: 2px;
+        text-align: center;
+    }
+    .content .seccion h2{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 35px;
     }
 
     .content .projects{
         
-        height: 500px;
+        height: 700px;
         background-color: #f5fafa;
 
     }
@@ -186,7 +210,7 @@ body{
         box-shadow: 0 0 20px rgba(0, 0,0,0.2);
         width: 80%;
         max-width: 700px;
-        height: 300px;
+        height: 500px;
         display: flex;
         flex-direction: row;
         padding: 2em;
@@ -202,34 +226,55 @@ body{
         width: 80px;
         border-radius: 50%;
         margin-bottom: 8px;
+        
+    }
+     .project-stack{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 20px 5px;
+        margin-top: 30px;
     }
 
+    .project-stack li{
+        background: #094d4b;
+        border-radius: 5%;
+        padding: 7px;
+        text-align: center;
+        color: rgb(241, 238, 238);
+        font-size: 15px;
+    }
     .project-main{
         text-align: left;
-        margin-left: 2.5em;
+        margin-left: 4em;
         
         
     }
     .project-name{
         margin-bottom: 8px;
     }
-    .project-body{
-        margin-top: 3.5em;
+    .content .seccion .card-project .project-body{
+        margin-top: 2.5em;
+        font-size: 15px;
+        text-align: justify;
+        
     }
+
 
     .project-button{
         text-align: center;
+
      }
      .view-details-button{
          appearance: none;
          border: none;
          outline: none;
          text-decoration: none;
-         padding: 0.75em 2.5em 0.75em 2.5em;;
+         padding: 0.75em 2em 0.75em 2em;;
          border-radius: 0.35em;
          background: #8ebebc;
          color: #fff;
-         font-size: 20px;
+         font-size: 30px;
          margin-top: 30px;
          
      
@@ -244,37 +289,48 @@ body{
 
     .content .about{
         background-color: #ecf1f1;
-        height: 1500px;
+        height: 2100px;
         
         
 
     }
-  
+
+    .content .about  h2{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 40px;
+        text-align: center;
+    }
+  .container .about .inspirations{
+      height: 870px;
+  }
     .content .about .inspirations .container{
         display: grid;
         grid-template-columns: 200px 200px;
         grid-template-rows: 300px 300px;
         justify-content: space-evenly;
-        grid-gap: 50px;
+        grid-row-gap: 100px;
     
         margin-bottom: 10px;
         margin-bottom: 50px;
+        height: 800px;
     
     }
 
     .card{
         background: white;
-        width: 200px;
-        height: 340px;
+        width: 250px;
+        height: 350px;
         margin: 10px;
         border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0,0,0.5);
+        
         
         
     }
     .card-image{
     
-        height: 150px;
-        margin-bottom: 10px;
+        height: 130px;
         background-size: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -306,11 +362,14 @@ body{
 
     .card-elements h4{
         color: rgb(166, 166, 240);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
-    .card-elements p{
+    .content .about .inspirations .container .card-elements .inspirations-p{
         margin-bottom: 15px;
+        text-align: center;
+        font-size: 20px;
+
     }
     .card-elements .fab{
         color:rgb(166, 166, 240);
@@ -348,7 +407,9 @@ body{
     }
     
     td{
-        padding: 2rem 2 rem;
+        padding: 2rem 2rem;
+        font-size: 1.2rem;
+        font-weight: 550;
     
     }
     tr{
@@ -417,6 +478,7 @@ body{
 
         background:#fff;
         font-size: 20px;
+        box-shadow: 0 0 20px rgba(0, 0,0,0.1);
     }
     
     
@@ -427,11 +489,12 @@ body{
 
         background: #fff;
         appearance: none;
-        border: none;
+        border:none;
         outline: none;
         padding: 12px 16px;
         border-radius: 10px;
         font-size: 25px;
+        box-shadow: 0 0 20px rgba(0, 0,0,0.1);
         
         
         

@@ -3,9 +3,9 @@
 "use strict"
 
 
-        let key = "ceac3276-b187-4407-86f7-b10e62b7f3d0";
+        const key = "ceac3276-b187-4407-86f7-b10e62b7f3d0";
 
-        let url= "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
+        const url= "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
 
             qString="?CMC_PRO_API_KEY=" + key + "&start=1&limit=5&convert=USD ";
 
@@ -16,6 +16,7 @@
               })
               .then(function(data){
                let arrayData = data.data;
+               console.log(arrayData)
 
                appenData(arrayData);
                  

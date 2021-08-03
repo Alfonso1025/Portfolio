@@ -19,6 +19,7 @@
      <!-- sidebar -->
 
         <aside class="sidebar">
+
             
             <div class="container-profile-pic">
 
@@ -30,18 +31,22 @@
                     <h2>Alfonso R. Elorriaga</h2>
                 </div>
         </div>
+
         <ul>
-            <li class="flexible-li"><a href="#"><i class="fas fa-briefcase"></i>Projects</a></li>
-            <li class="flexible-li"><a href="#"><i class="fas fa-user-tie"></i>About me</a></li>
-            <li class="flexible-l"i><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
-            <li class="flexible-li"><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="#" class="scroll.projects"><i class="fas fa-briefcase"></i>Projects</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i>About me</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
          
         </ul>
-        <div class="social_media">
+
+        
+          <ul class="social_media">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
             <a href="#"><i class="fab fa-github-square"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
+          </ul>
+        
     
         </aside>
 
@@ -53,8 +58,8 @@
                 
               <header class="header">
                   <div>
-                  <h1>Lorem</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat amet nisi eligendi cum a necessitatibus modi optio tempora sed! Nemo aperiam iste natus dignissimos molestias sit ipsam quibusdam optio doloremque!</p>
+                  <h1>Welcome to my Portfolio.</h1>
+                  <p>I am a web developer based in Chicago, Illinois in the United States.</p>
                 </div>
                 </header>
 
@@ -63,23 +68,26 @@
 
                 <div class="seccion projects">
                     <h1>Projects</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sunt itaque nihil enim culpa, voluptates magnam quod repellendus perspiciatis a maiores voluptatem minima eligendi nisi officiis cupiditate, eveniet hic sit.</p>
+                    <p>Take a look at some of the software that I have developed. Instructions, description and source code in github are avaiable below.</p>
                  
                     <div class="card-project">
                      
                       <div class="project-sidebar">
                         <img class="project-image" src="css/assets//img/samharris.png" alt="">
-                        <ul>
-                          <li></li>
-                          <li></li>
-                          <li></li>
+                        <ul class="project-stack">
+                          <li>Python</li>
+                          <li>Django</li>
+                          <li>PostgreSQL</li>
+                          <li>Bootstrap</li>
+                          <li>Javascript</li>
+                          
                         </ul>
                       </div>
 
                       <div class="project-main">
                         <h2 class="project-name">Handy</h2>
-                        <p>Web app</p>
-                        <p class="project-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.</p>
+                        <h4>Web app</h4>
+                        <p class="project-body">On its most basic and current state, Handy is an app that allows you to create a profile and upload a "Project", pictures or video of something that needs fixing at home like a broken door handle with a description. Contractors can see the Projects and select them. After a contractor has selected your Project yiu will be notified on your profile.Handy, was built using Bootstrap and JS for the front-end as well as Django and PostgreSQL for the server side.</p>
                         <div class="project-button">
                           <input class="view-details-button" type="submit" value="view-details">
                         </div>
@@ -94,20 +102,21 @@
 
                 <div class="seccion about">
                     <h1>About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit exercitationem doloremque maiores dignissimos quam est. Asperiores iusto dolorum ipsum dolore.</p>
-                 <div class="inspirations">
+                    <p>Full stack developer. The technologies that I use include pure CSS, Bootstrap and Javascript for the front-end, as well as Django, Node and relational databases like PostgreSQL for the server side. I have developed software for over a year, and  now, I am looking forward to my first job position. In the following sections, find a couple of projects in which I mix my passion for programming and technologies with other interests like finance, blockchain and embeded systems. </p>
+                 
+                    <div class="inspirations">
 
                     <h2>Inspirations</h2>
-
+                      <p>This project retrieves data from the Twitter API and dsiplays the latest twitt from 4 people that I find inspirational</p>
                     <section class="container">
                         <div class="card">
                           <div class="card-image card-1"></div>
                           <div class="card-elements">
-                          <h2>Sam Harrris</h2>
+                          <h3>Sam Harrris</h3>
 
                              <h4>Sam´s last twitt</h4>   
 
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, tempora.</p>
+                            <p class="inspirations-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, tempora.</p>
                             <i class="fab fa-twitter"></i>
                         </div>
                         </div>
@@ -115,9 +124,9 @@
                         <div class="card">
                           <div class="card-image card-2"></div>
                           <div class="card-elements">
-                          <h2>Lex Friedman</h2>
+                          <h3>Lex Friedman</h3>
                           <h4>Lex´s last twitt</h4> 
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
+                          <p class="inspirations-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
                           <i class="fab fa-twitter"></i>
                         </div>
                         </div>
@@ -125,9 +134,9 @@
                         <div class="card">
                           <div class="card-image card-3"></div>
                           <div class="card-elements">
-                          <h2>Vitaly Dmitriyevich</h2>
+                          <h3>Vitaly Dmitriyevich</h3>
                           <h4>Vitaly´s last twitt</h4> 
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
+                          <p class="inspirations-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
                           <i class="fab fa-twitter"></i>
                           </div>
                         </div>
@@ -135,37 +144,33 @@
                         <div class="card">
                             <div class="card-image card-4"></div>
                             <div class="card-elements">
-                            <h2>Elon Musk</h2>
+                            <h3>Elon Musk</h3>
                             <h4>Elon´s last twitt</h4> 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
+                            <p class="inspirations-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
                             <i class="fab fa-twitter"></i>
                             </div>
                           </div>
                     
                       </section>
 
-                      <h2>Interests</h2>
-
-                      <div class="interest-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th >Name</th>
-                                    <th>Price</th>
-                                    <th>Market Cap</th>
-                                    <th>Circulating Supply</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody">
-                                
-                            </tbody>
-                        </table>
-                    </div>
-
-
-
                  </div>
-                
+                 <h2>Interests</h2>
+                 <p>This table created with pure CSS, dinamically displays real time information about the 5 best ranked cryptocurrencies at the moment. I used the fetch method and the CoinMarketCap API to retieve the data.</p>
+                 <div class="interest-container">
+                   <table>
+                       <thead>
+                           <tr>
+                               <th >Name</th>
+                               <th>Price</th>
+                               <th>Market Cap</th>
+                               <th>Circulating Supply</th>
+                           </tr>
+                       </thead>
+                       <tbody id="tbody">
+                           
+                       </tbody>
+                   </table>
+               </div>
                 </div>
 
                 <div class="seccion blog">
@@ -179,22 +184,23 @@
 
               <!-- Contact -->
 
-             <footer class="contact">
+             <footer class="contact" id="contact">
                 
                 <h1>Contact me</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, quos. Accusantium quod vitae eligendi architecto beatae commodi ab ea quo!</p>
+                
                 <form action="">
-                    <input id="firstname" class="fisrtname" type="text" placeholder="Fisrtname">
-                    <input id="lastname" class="lastname" type="text" placeholder="lastname">
-                    <input id="email"class="email" type="email" placeholder="email">
-                    <input id="company"class="company" type="text" placeholder="company">
-                    <textarea id="message" class="message" placeholder="Message" ></textarea>
+                    <input id="firstname" class="fisrtname" type="text" placeholder="FIRSTNAME">
+                    <input id="lastname" class="lastname" type="text" placeholder="LASTNAME">
+                    <input id="email"class="email" type="email" placeholder="EMAIL">
+                    <input id="company"class="company" type="text" placeholder="COMPANY">
+                    <textarea id="message" class="message" placeholder="MESSAGE" ></textarea>
                    
                   </form>
                   <div class="align-button">
-                    <button onclick="sendEmail()" id="contact-button">
-                    <input  class="button" id="contact-button"type="submit" value="Send Message">
+                    <button class="button" onclick="sendEmail()" id="contact-button">
+                    SEND MESSAGE
                   </button>
+                  
                   </div>
 
 
@@ -207,15 +213,25 @@
 
              <!-- /wrapper -->
           
+              <!-- JavaScript -->
+
+               
+                
+
+               <!-- Email.Js -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
         <script type="text/javascript">
                  (function() {
                      // https://dashboard.emailjs.com/admin/integration
                      emailjs.init('user_hixMCK9CUhz3EOAIIHtPH');
                  })();
-             </script>
+
+            </script>
+             <!-- /Email.js -->
+
        <script src="js/bitcoinApi.js"></script> 
        <script src="js/contactForm.js"></script>
+       <script src="js/scroll.js"></script>
 
 </body>
 </html>
