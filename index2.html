@@ -18,7 +18,7 @@
 
      <!-- sidebar -->
 
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
 
             
             <div class="container-profile-pic">
@@ -33,10 +33,10 @@
         </div>
 
         <ul>
-            <li><a href="#" class="scroll.projects"><i class="fas fa-briefcase"></i>Projects</a></li>
-            <li><a href="#"><i class="fas fa-user-tie"></i>About me</a></li>
-            <li><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="#projects" class="scroll"><i class="fas fa-briefcase"></i>Projects</a></li>
+            <li><a href="#about" class="scroll"><i class="fas fa-user-tie"></i>About me</a></li>
+            <li><a href="#blog" class="scroll"><i class="fas fa-blog"></i>Blog</a></li>
+            <li><a href="#contact" class="scroll"><i class="fas fa-envelope"></i>Contact</a></li>
          
         </ul>
 
@@ -58,15 +58,19 @@
                 
               <header class="header">
                   <div>
+                    <div class="menu" id="menu">
+                      <i class="fas fa-bars"></i>
+                  </div>
                   <h1>Welcome to my Portfolio.</h1>
                   <p>I am a web developer based in Chicago, Illinois in the United States.</p>
                 </div>
+                
                 </header>
 
 
              <article class="content">
 
-                <div class="seccion projects">
+                <div class="seccion projects" id="projects">
                     <h1>Projects</h1>
                     <p>Take a look at some of the software that I have developed. Instructions, description and source code in github are avaiable below.</p>
                  
@@ -100,7 +104,7 @@
 
 
 
-                <div class="seccion about">
+                <div class="seccion about" id="about">
                     <h1>About me</h1>
                     <p>Full stack developer. The technologies that I use include pure CSS, Bootstrap and Javascript for the front-end, as well as Django, Node and relational databases like PostgreSQL for the server side. I have developed software for over a year, and  now, I am looking forward to my first job position. In the following sections, find a couple of projects in which I mix my passion for programming and technologies with other interests like finance, blockchain and embeded systems. </p>
                  
@@ -160,10 +164,10 @@
                    <table>
                        <thead>
                            <tr>
-                               <th >Name</th>
+                               <th>Name</th>
                                <th>Price</th>
-                               <th>Market Cap</th>
-                               <th>Circulating Supply</th>
+                               <th class="thhidden">Market Cap</th>
+                               <th class="thhidden">Circulating Supply</th>
                            </tr>
                        </thead>
                        <tbody id="tbody">
@@ -173,7 +177,9 @@
                </div>
                 </div>
 
-                <div class="seccion blog">
+
+
+                <div class="seccion blog" id="blog">
                     <h1>Blog</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit asperiores hic neque. Animi voluptas similique eius, adipisci suscipit accusantium fuga delectus molestiae hic impedit reiciendis aliquam rem velit deserunt error!</p>
                 </div>
@@ -215,6 +221,11 @@
           
               <!-- JavaScript -->
 
+              <!-- JQuery -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+              <!-- JQuery -->
+
                
                 
 
@@ -232,6 +243,7 @@
        <script src="js/bitcoinApi.js"></script> 
        <script src="js/contactForm.js"></script>
        <script src="js/scroll.js"></script>
+       <script src="js/toggle.js"></script>
 
 </body>
 </html>

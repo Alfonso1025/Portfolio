@@ -16,9 +16,17 @@
               })
               .then(function(data){
                let arrayData = data.data;
+               let width=screen.width;
                console.log(arrayData)
-
+               console.log(width);
+                if(width>700){
                appenData(arrayData);
+               
+                }
+                else{
+                  appenresponsive(arrayData);
+                  
+                }
                  
               })
 
@@ -26,24 +34,35 @@
 
 
               function appenData(array){
+                  for(var i=0; i<array.length; i++){
 
-
-
-                for(var i=0; i<array.length; i++){
-
-                    
-
-                   
                     var tbodyContent= document.getElementById('tbody');
-                  
                     var tr= document.createElement("tr");
+                    
                     tr.innerHTML= tr.innerHTML+ `<td>${array[i].name}</td>
-                                                //<td>${array[i].quote.USD.price}</td>
-                                                //<td>${array[i].quote.USD.market_cap}</td>
-                                                // <td>${array[i].circulating_supply}</td>`;
-
+                                                <td>${array[i].quote.USD.price}</td>
+                                                <td>${array[i].quote.USD.market_cap}</td>
+                                                 <td>${array[i].circulating_supply}</td>`;
+                  
                     tbodyContent.appendChild(tr);
                     
                 
                 }
                  }
+
+                 function appenresponsive(array){
+                  for(var i=0; i<array.length; i++){
+
+                    var tbodyContent= document.getElementById('tbody');
+                    var tr= document.createElement("tr");
+                    
+                    tr.innerHTML= tr.innerHTML+ `<td>${array[i].name}</td>
+                                                <td>${array[i].quote.USD.price}</td>`;
+                  
+                    tbodyContent.appendChild(tr);
+                    
+                
+                }
+                 }
+
+                 
