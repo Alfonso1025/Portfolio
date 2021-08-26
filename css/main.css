@@ -167,7 +167,7 @@ body{
     padding: 30px;
     
     }
-    .header div{
+    .header-content{
         padding-top: 200px;
         display: block;
         font-size: 3vw;
@@ -537,44 +537,46 @@ body{
         body{
             overflow-x: hidden;
         }
-        
+        .wrapper{
+            overflow-x: hidden;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'main'
+            'main'
+            'main'
+            ;
+        }
         .main{
-            width: 100vw;
+            width: 90vw;
         }
         .sidebar{
             display: none;
         }
-
-        .header{
-            height: 350px;
-            padding-top: 50px;
-        }
-        .header .menu{
-            display:block;
-            
-            right: 50px;
-            top: 10px;
-            position: fixed;
-            font-size: 25px;
-            
-            
-            
-            
-        }
-        .header .menu .fas{
-            
-            background: rgba(128, 136, 144, 0.5);
+        .header  .menu-container{
+          
+        width: 45px;
+        height: 45px;
+        padding: 13px;
+        border-radius: 5px;
+        background: rgba(128, 136, 144, 0.5);
+        position: fixed;
+        
+       
         }
 
-        .header div{
-            padding-top: 60px;
+        span{
             display: block;
-            font-size: 5vw;
-            color: rgb(165, 145, 145);
-            text-align: center;
-    
+            width: 15px;
+            height: 3px;
+            background: #fff;
+            margin-top: 2px;
+            border-radius: 2px;
             
         }
+         .menu-position{
+            left:300px;
+        }
+        
 
         .content .seccion h1{
             

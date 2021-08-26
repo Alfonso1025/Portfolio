@@ -36,7 +36,7 @@
 //});
 
 //option 2 Smooth Scroll with JQuery
-
+/*
 $('.sidebar .scroll').on('click', function(e){
     var test = $('.sidebar .scroll');
     console.log(test);
@@ -52,3 +52,4 @@ $('.sidebar .scroll').on('click', function(e){
         );
     }
 });
+*/
